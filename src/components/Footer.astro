@@ -1,15 +1,16 @@
 ---
-import {USER_NAME} from '../config'
+import { USER_NAME } from "../config";
 const today = new Date();
 ---
 
-<footer>
-	&copy; {today.getFullYear()} {USER_NAME}. All rights reserved.
-	<br/>Created By Astro🚀
+<footer class="p-6 text-center">
+	&copy; {today.getFullYear()}
+	{USER_NAME}. All rights reserved.
+	<br />Created By Astro🚀
 </footer>
 <style>
-	footer {
+	/* footer {
 		padding: 25px;
 		text-align: center;
-	}
+	} */
 </style>
