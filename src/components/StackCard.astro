@@ -15,7 +15,7 @@ const { item } = Astro.props;
     <h5 class="mb-2 text-1xl italic font-bold tracking-tight text-gray-900 dark:text-white">
         {item.name}
     </h5>
-    <div class="container flex gap-5 justify-between items-center">
+    <div class="container flex gap-5 justify-between items-start">
         { item.avatar? 
             <img src={item.avatar} alt="" class="w-auto h-16 mb-2"> 
             : <></>
