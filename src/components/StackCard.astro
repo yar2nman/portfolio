@@ -1,0 +1,30 @@
+---
+// Import the global.css file here so that it is included on
+// all pages through the use of the <BaseHead /> component.
+import '../styles/global.css';
+
+
+
+const { item } = Astro.props;
+---
+
+<a
+        href="#"
+        class="relative h-auto group block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+    >
+    <h5 class="mb-2 text-1xl italic font-bold tracking-tight text-gray-900 dark:text-white">
+        {item.name}
+    </h5>
+    <div class="container flex gap-5 justify-between items-center">
+        { item.avatar? 
+            <img src={item.avatar} alt="" class="w-auto h-16 mb-2"> 
+            : <></>
+        }
+        {item.description && 
+            <p class="font-normal text-left text-gray-700 dark:text-gray-400 mb-2">
+                {item.description}
+            </p>
+        }
+    </div>
+        <p class="absolute text-xs bottom-2 left-2">{item.rate} / 7</p>
+</a>

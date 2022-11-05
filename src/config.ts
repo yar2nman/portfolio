@@ -36,7 +36,7 @@ export const STACKS = [
         rate: 7,
     },
     {
-        name: "FireBase",
+        name: "",
         description:
             "Awesome",
         avatar: "/firebase.png",
@@ -64,14 +64,14 @@ export const STACKS = [
         rate: 4,
     },
     {
-        name: "CSS",
+        name: "",
         description:
             "",
         avatar: "/css3.png",
         rate: 4,
     },
     {
-        name: "HTML",
+        name: "",
         description:
             "",
         avatar: "/html.png",
@@ -85,7 +85,7 @@ export const STACKS = [
         rate: 4,
     },
     {
-        name: "Bootstrap",
+        name: "",
         description:
             "",
         avatar: "/bootstrap.jpg",

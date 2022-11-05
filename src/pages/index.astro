@@ -2,6 +2,8 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import StackCard from "../components/StackCard.astro";
+
 import { SITE_TITLE, SITE_DESCRIPTION, ABOUT_ME, STACKS } from "../config";
 
 const stacks = STACKS;
@@ -18,7 +20,7 @@ const stacks = STACKS;
 			{ABOUT_ME.map(i => <span class="my-1 text-gray-500">{i}</span><br/>)}
 			<h2 class="my-2">My Stack</h2>
 			<div>Below is a list of my stack and ratings based on my self generous assessment.</div>
-			<div>Each stack is a link to projects created with this stack.</div>
+			<div>Each stack is a link to projects created with this stack. "WOP"</div>
 			<div>Hope you will like my portfolio.</div>
 
 
@@ -27,21 +29,7 @@ const stacks = STACKS;
 				>
 					{
 						stacks.map((item) => (
-							<a
-								href="#"
-								class="relative h-auto group block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-							>
-							<div class="container flex gap-5 justify-between items-center">
-								<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-									{item.name}
-								</h5>
-								{ item.avatar? <img src={item.avatar} alt="" class="w-20 h-auto"> : <></>}
-							</div>
-								{item.description && <p class="font-normal text-gray-700 dark:text-gray-400 mb-2">
-									{item.description}
-								</p>}
-								<p class="absolute bottom-2 left-2">{item.rate} / 7</p>
-							</a>
+							<StackCard item={item} />
 						))
 					}
 				</div>
