@@ -3,6 +3,8 @@ import BaseHead from "../../components/BaseHead.astro";
 import Footer from "../../components/Footer.astro";
 import StackCard from "../../components/StackCard.astro";
 import { PROJECTS, STACKS } from "../../config";
+import Header from "../../components/Header.astro";
+
 
 export function getStaticPaths() {
   return [
@@ -24,6 +26,7 @@ console.log(pro)
 		<BaseHead title={pro?.name || ''} description={pro?.id || ''} />
 	</head>
 	<body>
+		<Header title={pro?.name || ''} />
 		<main>
             <h1>{project || 'hi'}</h1>
 				<div
