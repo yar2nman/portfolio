@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "ahmed-portfolio-3b24f",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
