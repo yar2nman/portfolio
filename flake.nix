@@ -24,9 +24,21 @@
             # pkgs.pnpm
             # pkgs.bun
 
+            pkgs.gnumake
+            pkgs.firebase-tools
+            pkgs.google-cloud-sdk
+
             pkgs.nodePackages.typescript
             pkgs.nodePackages.typescript-language-server
           ];
+
+          GREETING = "Hello Ahmed, This is Nix!";
+
+          shellHook = ''
+            echo $GREETING
+            export PS1='\[\e[0;32m\]Nix:\w> \[\e[0;34m\]'
+          '';
+
         };
       });
     };
