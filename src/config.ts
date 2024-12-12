@@ -112,27 +112,36 @@ export const PROJECTS: project[] = [
         id: 'ahqApp',
         name: 'AHQApp',
         stacks: ['angular', '.netCore', 'bootstrap', 'materialDesign', 'sql', 'gcp', ],
-        mainImage: '',
-        description: [''],
-        images: [''],
+        mainImage: 'AHQApp.jpg',
+        description: ['Application to mange operation of earthmoving machine dealer, Handling operation of Spare Parts, Service, Stock, Customer Orders, Order to supplier, Shipping and Expenses'],
+        images: ['AHQApp.jpg'],
         shortDescription: ''
     },
     {
         id: 'chess',
         name: 'Dont Move Till You See It',
         stacks: ['react', 'html', 'css'],
-        mainImage: '',
-        description: [''],
-        images: [''],
+        mainImage: 'chessBlindfold.png',
+        description: ['The application is to train chess players to visualize the next positions before moving By teaching them how to play blindfold. Player know the computer move by listening to the move instead of seeing it'],
+        images: ['chessBlindfold.png'],
         shortDescription: ''
     },
     {
         id: 'lifeStyle',
         name: 'Life Style Company',
         stacks: ['react', 'html', 'tailwind', 'flask', 'gcp'],
-        mainImage: '',
-        description: [''],
-        images: [''],
+        mainImage: 'lifestyle.jpg',
+        description: ['Wep application to help customers of a real state company see and filter units based on Location, Area price and so on. Then contacting the real state company.'],
+        images: ['lifestyle.jpg'],
+        shortDescription: ''
+    },
+    {
+        id: 'Plooto',
+        name: 'I am Plooto',
+        stacks: ['react', 'materialDesign', 'css', 'html'],
+        mainImage: 'plooto.png',
+        description: ['React app as frontend of a machine learning model that customizes construction design to improve area efficiency and reduce impact on the environment'],
+        images: ['plooto.png'],
         shortDescription: ''
     }
 ];
