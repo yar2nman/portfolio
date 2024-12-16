@@ -1,0 +1,23 @@
+---
+interface Props {
+  id: string;
+  name: string;
+  stacks: string[];
+  mainImage: string;
+  images: string[];
+  shortDescription: string;
+  description: string[];
+}
+const { id, name, description, images } = Astro.props;
+---
+
+<a href={`/projects/${id}`} class="block w-full mb-4 p-4 border rounded hover:bg-gray-100 transition">
+    <div class="flex flex-col lg:flex-row">
+        <h2 class="text-xl font-bold mb-2 lg:hidden">{name}</h2>
+        <img src={images[0]} alt={name} class="w-full lg:w-1/3 h-auto object-cover lg:mr-4 mb-2 lg:mb-0" />
+        <div class="w-full lg:w-2/3">
+            <h2 class="text-xl font-bold mb-2 hidden lg:block">{name}</h2>
+            <p>{description}</p>
+        </div>
+    </div>
+</a> 
